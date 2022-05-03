@@ -97,19 +97,11 @@
     "domainMatcher": "mph",
     "rules": [
       {
-        "type": "field",
-        "inboundTag": [
-          "api"
+        "outboundTag": "block",
+        "domain": [
+          "domain:google.com"
+          
         ],
-        "outboundTag": "api",
-        "enabled": true
-      },
-      {
-        "type": "field",
-        "port": "0-65535",
-        "outboundTag": "proxy",
         "enabled": true
       }
-    ]
-  }
-}
+    ]}}
